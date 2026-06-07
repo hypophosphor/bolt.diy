@@ -92,7 +92,7 @@ const getInitialProviderSettings = (): ProviderSetting => {
       ...provider,
       settings: {
         // Local providers should be disabled by default
-        enabled: !LOCAL_PROVIDERS.includes(provider.name),
+        enabled: LOCAL_PROVIDERS.includes(provider.name),
       },
     };
   });
